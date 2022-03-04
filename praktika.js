@@ -17,21 +17,28 @@ function h2All(){
     h2.forEach(element => {
         element.innerText =  rand(1,6);
     })
+    if(h2[0].innerHTML === h2[1].innerHTML){
+        h2[0].style.color = 'red';
+        h2[1].style.color = 'red';
+    }else{
+        h2[0].style.color = 'none';
+        h2[1].style.color = 'none';
+    }
     
 }
 
 //Paspaudus mygtuką skaičiai turi būti pergeneruojami iš naujo. Jeigu sugeneruoti skaičiai yra vienodi, juos nudažyti raudonai. (4 taškai)
 
-const h2 = document.querySelectorAll('h2');
+// const h2 = document.querySelectorAll('h2');
 
 
-if(h2[0].innerHTML === h2[1].innerHTML){
-    h2[0].style.color = 'red';
-    h2[1].style.color = 'red';
-}else{
-    h2[0].style.color = 'none';
-    h2[1].style.color = 'none';
-}
+// if(h2[0].innerHTML === h2[1].innerHTML){
+//     h2[0].style.color = 'red';
+//     h2[1].style.color = 'red';
+// }else{
+//     h2[0].style.color = 'none';
+//     h2[1].style.color = 'none';
+// }
 
 //2. Tiesiogiai HTML faile rankiniu būdu sukurkite <h3> tagą ir vieną mygtuką. Susikurkite tuščią masyvą, skaičiams saugoti. (2 taškai)
 /*a. Paspaudus mygtuką, sugeneruokite rand() skaičių nuo 1 iki 10. Sugeneruotą skaičių pridėkite į masyvą, o tą masyvą atspausdinkite konsolėle. (4 taškai)
