@@ -17,12 +17,12 @@ function h2All(){
     h2.forEach(element => {
         element.innerText =  rand(1,6);
     })
-    if(h2[0].innerHTML === h2[1].innerHTML){
+    if(h2[0].innerText === h2[1].innerText){
         h2[0].style.color = 'red';
         h2[1].style.color = 'red';
     }else{
-        h2[0].style.color = 'none';
-        h2[1].style.color = 'none';
+        h2[0].style.color = 'black';
+        h2[1].style.color = 'black';
     }
     
 }
